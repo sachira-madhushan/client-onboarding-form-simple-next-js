@@ -1,6 +1,22 @@
+"use client";
+
 import Image from "next/image";
+import Select from "react-select";
+import { useState } from "react";
+import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker";
 
 export default function OnboardingForm() {
+    const [services, setServices] = useState([]);
+    const [startDate, setStartDate] = useState(new Date());
+
+    const serviceOptions = [
+        { value: "UI/UX", label: "UI/UX" },
+        { value: "Branding", label: "Branding" },
+        { value: "Web Dev", label: "Web Development" },
+        { value: "Mobile App", label: "Mobile App" },
+    ];
+
     return (
 
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -40,8 +56,8 @@ export default function OnboardingForm() {
                             </div>
 
                             <div>
-                                <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                                    Fullname
+                                <label htmlFor="fullname" className="block text-sm font-medium text-gray-700">
+                                    Full Name
                                 </label>
                                 <input
                                     id="fullname"
@@ -52,6 +68,59 @@ export default function OnboardingForm() {
                                 />
                             </div>
 
+                            <div>
+                                <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+                                    Company Name
+                                </label>
+                                <input
+                                    id="company"
+                                    type="text"
+                                    className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 
+                             focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                                    placeholder="Company Name"
+                                />
+                            </div>
+
+                            <div className="text-black">
+                                <label className="block text-sm font-medium text-gray-700">
+                                    Services Interested In
+                                </label>
+                                <Select
+                                    isMulti
+                                    options={serviceOptions}
+                                    value={services}
+                                    onChange={setServices}
+                                    placeholder="Select services..."
+                                    className="mt-1 hover:cursor-pointer"
+                                />
+                            </div>
+
+                            <div>
+                                <label htmlFor="budget" className="block text-sm font-medium text-gray-700">
+                                    Budget (USD)
+                                </label>
+                                <input
+                                    id="company"
+                                    type="number"
+                                    className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 
+                             focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                                    placeholder="1000"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700">
+                                    Project Start Date
+                                </label>
+                                <DatePicker
+                                    selected={startDate}
+                                    onChange={(date) => setStartDate(date)}
+                                    minDate={new Date()}
+                                    dateFormat="yyyy-MM-dd"
+                                    placeholderText="Select start date"
+                                    className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    wrapperClassName="w-full"
+                                />
+                            </div>
                             <div className="flex items-center justify-between">
                                 <label className="inline-flex items-center gap-2">
                                     <input type="checkbox" className="h-4 w-4 rounded border-gray-300 hover:cursor-pointer" />
