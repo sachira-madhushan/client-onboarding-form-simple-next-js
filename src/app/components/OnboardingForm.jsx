@@ -199,8 +199,8 @@ export default function OnboardingForm() {
                                     control={control}
                                     render={({ field }) => (
                                         <DatePicker
-                                            selected={field.value}
-                                            onChange={field.onChange}
+                                            selected={field.value ? new Date(field.value) : null}
+                                            onChange={(date) => field.onChange(date?.toISOString().split("T")[0])}
                                             minDate={new Date()}
                                             dateFormat="yyyy-MM-dd"
                                             placeholderText="Select start date"
