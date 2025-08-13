@@ -26,7 +26,7 @@ export default function OnboardingForm() {
                     <div className="md:w-1/2 w-full p-6 bg-gray-50 flex flex-col">
                         <div className="relative w-full h-64 md:h-full">
                             <Image
-                                src="/client_onboarding.webp"
+                                src="/client_onboarding.jpg"
                                 alt="Left visual"
                                 fill
                                 className="object-cover rounded-2xl"
