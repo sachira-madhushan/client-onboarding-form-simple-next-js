@@ -26,6 +26,7 @@ export default function OnboardingForm() {
     const {
         register,
         handleSubmit,
+        watch,
         control,
         formState: { errors },
     } = useForm({
@@ -35,8 +36,11 @@ export default function OnboardingForm() {
             services: [],
             startDate: null,
             budget: undefined,
+            acceptTerms: false,
         },
     });
+
+    const acceptTerms = watch("acceptTerms");
 
     const onSubmit = (data) => {
         console.log("Valid form data:", data);
@@ -229,6 +233,7 @@ export default function OnboardingForm() {
                                             shakeFields.terms && "animate-shake"
                                         )}
                                         {...register("terms")}
+                                        {...register("acceptTerms")}
                                     />
                                     <span className="text-sm text-gray-600">I read and agree to terms & conditions</span>
                                 </label>
@@ -237,7 +242,10 @@ export default function OnboardingForm() {
                             {/* Submit */}
                             <button
                                 type="submit"
-                                className="w-full rounded-lg bg-blue-600 py-2.5 font-medium text-white hover:bg-blue-700 transition hover:cursor-pointer"
+                                disabled={!acceptTerms}
+                                className={clsx("w-full rounded-lg bg-blue-600 py-2.5 font-medium text-white hover:bg-blue-700 transition hover:cursor-pointer", {
+                                    "opacity-50 cursor-not-allowed": !acceptTerms,
+                                })}
                             >
                                 Register
                             </button>
