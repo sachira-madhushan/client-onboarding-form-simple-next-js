@@ -152,8 +152,8 @@ export default function OnboardingForm() {
                                         <Select
                                             isMulti
                                             options={serviceOptions}
-                                            value={field.value}
-                                            onChange={field.onChange}
+                                            value={field.value.map(v => serviceOptions.find(opt => opt.value === v))}
+                                            onChange={(val) => field.onChange(val.map(v => v.value))}
                                             placeholder="Select services..."
                                             className={clsx(
                                                 "mt-1 hover:cursor-pointer",
