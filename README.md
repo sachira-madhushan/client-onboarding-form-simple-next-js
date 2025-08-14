@@ -1,6 +1,6 @@
 # Client Onboarding Form  
 
-![Application GIF](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/application.gif">
 
 
 A small client onboarding form built with **Next.js App Router**, **React Hook Form**, and **Zod** validation.  
@@ -47,16 +47,16 @@ The form validates user input, posts the data to an external API endpoint, and p
 ## 🚀 Screenshots
 
 Web View
-![Application GIF]('https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/form_fields.png')  
-![Application GIF]('https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/validations.png')  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/form_fields.png">
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/validations.png">
 
-Mobile View
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_form_fields.png")  
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_validations.png")  
+Mobile View <br>
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_form_fields.png">
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_validations.png">
 
 Notifications
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/success.PNG")  
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/error.PNG")  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/success.PNG">
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/error.PNG">
 
 ---
 ## 📦 Installation & Setup
@@ -73,8 +73,10 @@ Enviroment variables:
 
 Use .env.example as template for the env file.
 
-| NEXT_PUBLIC_BASE_URL | Base URL |
-| NEXT_PUBLIC_ONBOARD_URL | Onboarding form endpoint |
+| Variable              | Value     | 
+|--------------------|----------|
+| NEXT_PUBLIC_BASE_URL          | Base URL   |
+| NEXT_PUBLIC_ONBOARD_URL              | Onboarding form endpoint   |
 
 
 Run locally:
