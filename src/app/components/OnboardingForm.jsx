@@ -81,7 +81,7 @@ export default function OnboardingForm() {
             <div className="w-full max-w-5xl rounded-3xl shadow-[0_0_15px_rgba(0,0,0,0.1)] overflow-hidden 
                       bg-white">
                 <div className="flex flex-col md:flex-row">
-                    <div className="md:w-1/2 w-full p-6 bg-gray-50 flex flex-col">
+                    <div className="md:w-1/2 w-full p-6 bg-gray-50 hidden md:flex flex-col">
                         <div className="relative w-full h-64 md:h-full">
                             <Image
                                 src="/client_onboarding.jpg"
@@ -98,7 +98,7 @@ export default function OnboardingForm() {
 
                     <div className="md:w-1/2 w-full p-8 flex items-center">
                         <form className="w-full space-y-5" onSubmit={handleSubmit(onSubmit, onError)}>
-                            <h2 className="text-3xl font-bold text-black">Client Onboarding</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold text-black">Client Onboarding</h2>
 
                             {/* Full Name */}
                             <div>
