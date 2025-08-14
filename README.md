@@ -73,8 +73,10 @@ Enviroment variables:
 
 Use .env.example as template for the env file.
 
-| NEXT_PUBLIC_BASE_URL | Base URL |
-| NEXT_PUBLIC_ONBOARD_URL | Onboarding form endpoint |
+| Variable              | Value     | 
+|--------------------|----------|
+| NEXT_PUBLIC_BASE_URL          | Base URL   |
+| NEXT_PUBLIC_ONBOARD_URL              | Onboarding form endpoint   |
 
 
 Run locally:
