@@ -47,16 +47,16 @@ The form validates user input, posts the data to an external API endpoint, and p
 ## 🚀 Screenshots
 
 Web View
-![Application GIF]("./public/form_fields.png")  
-![Application GIF]("./public/validations.png")  
+![Application GIF]('https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/form_fields.png')  
+![Application GIF]('https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/validations.png')  
 
 Mobile View
-![Application GIF]("./public/mobile_form_fields.png")  
-![Application GIF]("./public/mobile_validations.png")  
+![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_form_fields.png")  
+![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_validations.png")  
 
 Notifications
-![Application GIF]("./public/success.PNG")  
-![Application GIF]("./public/error.PNG")  
+![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/success.PNG")  
+![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/error.PNG")  
 
 ---
 ## 📦 Installation & Setup
