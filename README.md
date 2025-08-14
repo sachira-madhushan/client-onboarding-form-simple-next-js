@@ -73,10 +73,9 @@ Enviroment variables:
 
 Use .env.example as template for the env file.
 
-```bash
 | NEXT_PUBLIC_BASE_URL | Base URL |
 | NEXT_PUBLIC_ONBOARD_URL | Onboarding form endpoint |
-```
+
 
 Run locally:
 
