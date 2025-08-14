@@ -7,6 +7,7 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "./../schemas/ClientOnboardingFormValidation";
 import clsx from "clsx";
+import { postClientOnboardingFormData } from "../utils/ApiClient"
 
 // Client-only imports
 const Select = dynamic(() => import("react-select"), { ssr: false });
@@ -42,8 +43,18 @@ export default function OnboardingForm() {
 
     const acceptTerms = watch("acceptTerms");
 
-    const onSubmit = (data) => {
-        console.log("Valid form data:", data);
+    const onSubmit = async (data) => {
+        try {
+            const result = await postClientOnboardingFormData(JSON.stringify(data));
+            if (result.status === 200 || result.status === 201) {
+                alert("Success")
+            }else{
+                alert("Failed")
+            }
+
+        } catch (err) {
+            alert("Failed")
+        }
     };
 
     const onError = (formErrors) => {

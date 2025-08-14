@@ -23,7 +23,7 @@ export const postClientOnboardingFormData = async (data) => {
 
     try {
         const response = await apiClient.post(process.env.NEXT_PUBLIC_ONBOARD_URL, requestBody);
-        return response.data;
+        return response;
     } catch (error) {
         console.error("Error submitting onboarding form:", error);
         throw error;
