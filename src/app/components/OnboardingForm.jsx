@@ -266,7 +266,7 @@ export default function OnboardingForm() {
                                     "opacity-50 cursor-not-allowed": !acceptTerms,
                                 })}
                             >
-                                Send Request
+                                Submit Application
                             </button>
                         </form>
                     </div>
