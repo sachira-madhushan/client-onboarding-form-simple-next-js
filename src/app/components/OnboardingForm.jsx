@@ -8,6 +8,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "./../schemas/ClientOnboardingFormValidation";
 import clsx from "clsx";
 import { postClientOnboardingFormData } from "../utils/ApiClient"
+import { toast } from "react-toastify";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 // Client-only imports
 const Select = dynamic(() => import("react-select"), { ssr: false });
@@ -47,13 +49,19 @@ export default function OnboardingForm() {
         try {
             const result = await postClientOnboardingFormData(JSON.stringify(data));
             if (result.status === 200 || result.status === 201) {
-                alert("Success")
-            }else{
-                alert("Failed")
+                toast.success(
+                    <span>Registered successfully!</span>
+                );
+            } else {
+                toast.error(
+                    <span>Registration failed!</span>
+                );
             }
 
         } catch (err) {
-            alert("Failed")
+            toast.error(
+                <span>Registration failed!</span>
+            );
         }
     };
 
