@@ -47,16 +47,16 @@ The form validates user input, posts the data to an external API endpoint, and p
 ## 🚀 Screenshots
 
 Web View
-![Application GIF]('https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/form_fields.png')  
-![Application GIF]('https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/validations.png')  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/form_fields.png">
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/validations.png">
 
 Mobile View
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_form_fields.png")  
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_validations.png")  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_form_fields.png">
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/mobile_validations.png">
 
 Notifications
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/success.PNG")  
-![Application GIF]("https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/error.PNG")  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/success.PNG">
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/error.PNG">
 
 ---
 ## 📦 Installation & Setup
