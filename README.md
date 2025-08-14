@@ -1,8 +1,7 @@
 # Client Onboarding Form  
 
-![Next.js Logo](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)  
-![React Hook Form](https://react-hook-form.com/images/logo/react-hook-form-logo-only.png)  
-![Zod Logo](https://zod.dev/logo.svg)  
+![Application GIF](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)  
+
 
 A small client onboarding form built with **Next.js App Router**, **React Hook Form**, and **Zod** validation.  
 The form validates user input, posts the data to an external API endpoint, and provides a smooth UX with inline errors, disabled submit during submission, and success/error feedback.
@@ -14,7 +13,7 @@ The form validates user input, posts the data to an external API endpoint, and p
 - [React Hook Form](https://react-hook-form.com/)
 - [Zod](https://zod.dev/) with `@hookform/resolvers/zod`
 - [Axios](https://axios-http.com/) for HTTP requests
-- [TailwindCSS](https://tailwindcss.com/) (or any CSS solution)
+- [TailwindCSS](https://tailwindcss.com/)
 - [React Datepicker](https://reactdatepicker.com/) for date input
 - [React Toastify](https://fkhadra.github.io/react-toastify/) for notifications
 
@@ -23,12 +22,12 @@ The form validates user input, posts the data to an external API endpoint, and p
 ## ✨ Features
 - **Form Validation** with Zod
 - Inline error messages
-- Disable submit button while submitting
+- Mobile responsive
 - Persist values when validation errors occur
 - API submission with Axios
 - Success toast with submitted data summary
 - Error notice on failed requests
-- Environment variable for API endpoint (`NEXT_PUBLIC_ONBOARD_URL`)
+- Environment variable for API endpoint (API Client) (`NEXT_PUBLIC_ONBOARD_URL`)
 
 ---
 
@@ -45,10 +44,44 @@ The form validates user input, posts the data to an external API endpoint, and p
 
 ---
 
+## 🚀 Screenshots
+
+Web View
+![Application GIF]("./public/form_fields.png")  
+![Application GIF]("./public/validations.png")  
+
+Mobile View
+![Application GIF]("./public/mobile_form_fields.png")  
+![Application GIF]("./public/mobile_validations.png")  
+
+Notifications
+![Application GIF]("./public/success.PNG")  
+![Application GIF]("./public/error.PNG")  
+
+---
 ## 📦 Installation & Setup
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/onboarding-form.git
-cd onboarding-form
+git clone https://github.com/sachira-madhushan/client-onboarding-form-simple-next-js.git
+
+cd client-onboarding-form-simple-next-js
+```
+
+Enviroment variables:
+
+Use .env.example as template for the env file.
+
+```bash
+| NEXT_PUBLIC_BASE_URL | Base URL |
+| NEXT_PUBLIC_ONBOARD_URL | Onboarding form endpoint |
+```
+
+Run locally:
+
+```bash
+npm install
+
+npm run dev
+```
