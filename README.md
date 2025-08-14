@@ -1,6 +1,6 @@
 # Client Onboarding Form  
 
-![Application GIF](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)  
+<img src="https://raw.githubusercontent.com/sachira-madhushan/client-onboarding-form-simple-next-js/refs/heads/feature/client-onboarding-form/public/application.gif">
 
 
 A small client onboarding form built with **Next.js App Router**, **React Hook Form**, and **Zod** validation.  
