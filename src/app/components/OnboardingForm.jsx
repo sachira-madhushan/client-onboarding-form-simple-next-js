@@ -247,7 +247,7 @@ export default function OnboardingForm() {
                                     "opacity-50 cursor-not-allowed": !acceptTerms,
                                 })}
                             >
-                                Register
+                                Send Request
                             </button>
                         </form>
                     </div>
