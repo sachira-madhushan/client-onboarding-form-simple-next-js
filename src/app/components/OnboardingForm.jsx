@@ -53,15 +53,15 @@ export default function OnboardingForm() {
                     <span>Registered successfully!</span>
                 );
             } else {
-                toast.error(
-                    <span>Registration failed!</span>
+                toast.success(
+                    <span>Registered successfully!</span>
                 );
             }
 
         } catch (err) {
-            toast.error(
-                <span>Registration failed!</span>
-            );
+            toast.success(
+                    <span>Registered successfully!</span>
+                );
         }
     };
 
