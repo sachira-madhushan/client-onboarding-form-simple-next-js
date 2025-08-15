@@ -13,9 +13,10 @@ The form validates user input, posts the data to an external API endpoint, and p
 - [React Hook Form](https://react-hook-form.com/)
 - [Zod](https://zod.dev/) with `@hookform/resolvers/zod`
 - [Axios](https://axios-http.com/) for HTTP requests
-- [TailwindCSS](https://tailwindcss.com/)
+- [TailwindCSS](https://tailwindcss.com/) for styling
 - [React Datepicker](https://reactdatepicker.com/) for date input
 - [React Toastify](https://fkhadra.github.io/react-toastify/) for notifications
+- [Vitest](https://vitest.dev/) for unit testing
 
 ---
 
